@@ -1,0 +1,1 @@
+# Pasta para guarda relatorios sobre o aprendizado de symfony
