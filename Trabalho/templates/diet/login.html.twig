@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+    
+     <div class="container_login">
+        <form action="/login" method="post">
+            <h1>Login</h1>
+            <input type="text" placeholder="E-mail" id="emailLogin" name="emailLogin" required>
+            <br><br>
+            <input type="password" placeholder="Senha" id="senhaLogin" name="senhaLogin" required>
+            <br><br>
+            <button type="submit">Login</button>
+            <br><br>
+
+            <!-- Poderia Deixar bonitinho o email ou senha incorreta pfv ? -->
+            <p class="incorrect">Email ou senha incorreta</p>
+        </form>
+        <a href="/ficha"><button class="botões_geral">Registrar</button></a>
+    </div>
+{% endblock %}
